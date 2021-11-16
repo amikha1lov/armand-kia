@@ -1,0 +1,200 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "vars.css";
+@import "animation.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: var(--font-regular);
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /*outline: 1px solid red;*/
+}
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.active {
+    visibility: visible;
+    display: block;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    color: #08141E;
+}
+
+/* Цены start */
+.prices {
+    padding: 90px 0px;
+}
+.prices__title {
+    margin-bottom: 40px;
+    font-family: var(--font-bold);
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+}
+sort-newprice {
+    margin: 20px 0px;
+}
+.sort-newprice__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.sort-newprice input[type=radio] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.sort-newprice input[type=radio]:checked + label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #08141E;
+    border-bottom: 2px solid #08141E;
+}
+.sort-newprice label {
+    font-family: var(--font-bold);
+    padding: 14px;
+    width: 100%;
+    font-width: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #08141E80;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(8, 20, 30, 0.2);
+}
+.block-prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    margin-top: 40px;
+}
+.services-price {
+    padding: 25px;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+}
+.services-price__title {
+    font-weight: 400;
+    font-family: var(--font-regular);
+    font-size: 18px;
+    line-height: 22px;
+    color: #08141EB3;
+}
+
+.services-price__subscribe {
+    display: none;
+}
+.services-price:hover .services-price__subscribe {
+    display: block;
+}
+
+.services-price:hover .services-price__value {
+    display: none;
+}
+.services-price__value {
+    margin-top: 25px;
+    font-family: var(--font-bold);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #08141E;
+}
+.services-price__subscribe {
+    background: #08141E;
+    padding: 9px 68px;
+    font-family: var(--font-bold);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+
+}
+/* Цены end */
+
+
+/* Обратный звонок start */
+.callback {
+    background-color: #08141E;
+    padding: 85px 0px;
+    position: relative;
+}
+.callback:before {
+    content:'';
+    pointer-events: none;
+    background-image: url("../img/callback__left.png");
+    height: 138px;
+    width: 465px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.callback:after {
+    content:'';
+    pointer-events: none;
+    background-image: url("../img/callback__right.png");
+    height: 270px;
+    width: 827px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+.callback__title {
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.form-callback {
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-callback__input {
+    font-family: var(--font-regular);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    background: transparent;
+    color: #FFFFFF80;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FFFFFF33;
+}
+.form-callback__submit {
+    font-family: var(--font-bold);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #08141E;
+    padding: 16.5px 63px;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+/* Обратный звонок end */

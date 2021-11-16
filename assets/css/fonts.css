@@ -1,0 +1,51 @@
+
+@font-face{
+    font-family:'KiaSignatureBold', sans-serif;
+    src:url('../fonts/KiaSignatureBold.eot');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureLight', sans-serif;
+    src:url('../fonts/KiaSignatureLight.eot');
+}
+
+@font-face{
+    font-family:'KiaSignatureRegular', sans-serif;
+    src:url('../fonts/KiaSignatureRegular.eot');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureBold', sans-serif;
+    src:url('../fonts/KiaSignatureBold.woff');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureLight', sans-serif;
+    src:url('../fonts/KiaSignatureLight.woff');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureRegular', sans-serif;
+    src:url('../fonts/KiaSignatureRegular.woff');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureBold', sans-serif;
+    src:url('../fonts/KiaSignatureBold.woff2');
+}
+
+@font-face{
+    font-family:'KiaSignatureLight', sans-serif;
+    src:url('../fonts/KiaSignatureLight.woff2');
+}
+
+
+@font-face{
+    font-family:'KiaSignatureRegular', sans-serif;
+    src:url('../fonts/KiaSignatureRegular.woff2');
+}
