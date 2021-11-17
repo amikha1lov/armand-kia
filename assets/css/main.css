@@ -309,6 +309,21 @@ sort-newprice {
     color: #08141E80;
 
 }
+.help__action--car {
+    position: relative;
+}
+.help__action--car:after {
+    content: '';
+    width: 573px;
+    height: 348px;
+    display: block;
+    background-image: url("../img/car_elem.svg");
+    position: absolute;
+    left: 67px;
+    bottom: -120px;
+}
+
+
 /* help end */
 
 
