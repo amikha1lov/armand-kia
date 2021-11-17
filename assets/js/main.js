@@ -3,6 +3,32 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('input[type="tel"]'), {
             mask: '+{7}(000)000-00-00'
         });
+
+
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(el => {
+        el.addEventListener('click', (e) => {
+            const self = e.currentTarget;
+            const control = self.querySelector('.accordion__control');
+            const content = self.querySelector('.accordion__content');
+
+            self.classList.toggle('open');
+
+            // если открыт аккордеон
+            if (self.classList.contains('open')) {
+                control.setAttribute('aria-expanded', true);
+                content.setAttribute('aria-hidden', false);
+
+            } else {
+                control.setAttribute('aria-expanded', false);
+                content.setAttribute('aria-hidden', true);
+
+            }
+        });
+    });
+
+
     let radioTypeCar = document.querySelectorAll('.sort-newprice__wrapper input[type="radio"]');
     let carPrice = document.querySelectorAll('.services-price__value--car');
     let crossoverPrice = document.querySelectorAll('.services-price__value--crossover');
